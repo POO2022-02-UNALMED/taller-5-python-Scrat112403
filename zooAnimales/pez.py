@@ -10,6 +10,10 @@ class Pez(Animal):
         self._cantidadAletas=cantidadAletas
         Pez._listado.append(self)
     
+    def movimiento():
+        return "nadar"
+
+    
     @classmethod
     def crearSalmon(cls, nombre, edad, genero):
         Pez.salmones+=1
