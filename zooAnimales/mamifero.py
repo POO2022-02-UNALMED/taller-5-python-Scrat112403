@@ -29,3 +29,15 @@ class Mamifero (Animal):
     
     def setListado(cls, listado):
         Mamifero._listado= listado
+    
+    def setPelaje(self, pelaje):
+        self._pelaje= pelaje
+
+    def getPelaje(self):
+        return self._pelaje
+    
+    def setPatas(self, patas):
+        self._patas= patas
+
+    def getPatas(self):
+        return self._patas 
