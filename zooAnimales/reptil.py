@@ -32,6 +32,18 @@ class Reptil(Animal):
     
     def setListado(cls, listado):
         Reptil._listado= listado
+    
+    def setColorEscamas(self, color):
+        self._colorEscamas= color
+
+    def getColorEscamas(self):
+        return self._colorEscamas
+    
+    def setLargoCola(self, largo):
+        self._largoCola= largo
+
+    def getLargoCola(self):
+        return self._largoCola 
 
     
     
