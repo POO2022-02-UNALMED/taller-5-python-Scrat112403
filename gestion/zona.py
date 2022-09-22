@@ -22,5 +22,11 @@ class Zona:
     def getZoo(self):
         return self._zoo
     
+    def setAnimales(self, animal):
+        self.animales= animal
+
+    def getAnimales(self):
+        return self.animales
+    
 
 
