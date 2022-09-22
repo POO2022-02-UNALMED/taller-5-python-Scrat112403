@@ -11,7 +11,7 @@ class Reptil(Animal):
         Reptil._listado.append(self)
     
     def movimiento(self):
-        return "arrastrarse"
+        return "reptar"
     
     @classmethod
     def cantidadReptiles(cls):

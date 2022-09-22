@@ -31,6 +31,12 @@ class Ave(Animal):
     
     def setListado(cls, listado):
         Ave._listado= listado
+    
+    def setColorPlumas(self, color):
+        self._colorPlumas= color
+
+    def getColorPlumas(self):
+        return self._colorPlumas
 
 
     
