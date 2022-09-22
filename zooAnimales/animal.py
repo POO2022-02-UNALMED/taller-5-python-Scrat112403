@@ -17,10 +17,14 @@ class Animal:
     def totalPorTipo(cls):
         from zooAnimales.mamifero import Mamifero
         return "Mamiferos: "+ Mamifero.cantidadMamiferos()
-        return "Aves: "+
-        return "Reptiles: "+
-        return "Peces: "+
-        return "Anfibios: "+
+        from zooAnimales.ave import Ave
+        return "Aves: "+ Ave.cantidadAves()
+        from zooAnimales.reptil import Reptil
+        return "Reptiles: "+ Reptil.cantidadReptiles()
+        from zooAnimales.pez import Pez
+        return "Peces: "+ Pez.cantidadPeces()
+        from zooAnimales.anfibio import Anfibio
+        return "Anfibios: "+ Anfibio.cantidadAnfibios()
     
     def toString(self):
         if self._zona != None:
