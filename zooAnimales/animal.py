@@ -16,7 +16,7 @@ class Animal:
     @classmethod
     def totalPorTipo(cls):
         from zooAnimales.mamifero import Mamifero
-        return "Mamiferos: "+ Mamifero.cantidadMamiferos()
+        return "Mamiferos: "+ {Mamifero.cantidadMamiferos()}
         from zooAnimales.ave import Ave
         return "Aves: "+ Ave.cantidadAves()
         from zooAnimales.reptil import Reptil
@@ -25,6 +25,7 @@ class Animal:
         return "Peces: "+ Pez.cantidadPeces()
         from zooAnimales.anfibio import Anfibio
         return "Anfibios: "+ Anfibio.cantidadAnfibios()
+       
     
     def toString(self):
         if self._zona != None:
