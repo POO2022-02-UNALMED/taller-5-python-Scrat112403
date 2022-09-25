@@ -26,10 +26,9 @@ class Animal:
     
     def toString(self):
         if self._zona != None:
-            return "Mi nombre es "+self._nombre +"tengo una edad de "+ self._edad + "habito en " + self._habitat + "y mi genero es " + self._genero + "la zona en la que me ubico es "+ self._zona + "en el " + self._zoo
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona.getNombre()} en el {self._zona.getZoo().getNombre()}"
         else:
-            return "Mi nombre es "+self._nombre +"tengo una edad de "+ self._edad + "habito en " + self._habitat + "y mi genero es " + self._genero
-    
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
     def setNombre(self, nombre):
         self._nombre= nombre
 
